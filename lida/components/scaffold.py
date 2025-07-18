@@ -31,11 +31,12 @@ class ChartScaffold(object):
 import matplotlib.pyplot as plt
 import pandas as pd
 <imports>
-# plan -
+# solution plan
+# i.  ..
 def plot(data: pd.DataFrame):
     <stub> # only modify this section
     plt.title('{goal.question}', wrap=True)
-    return plt;
+    return plt
 
 chart = plot(data) # data already contains the data to be plotted. Always include this line. No additional code beyond this line."""
         elif library == "seaborn":
@@ -55,7 +56,7 @@ def plot(data: pd.DataFrame):
 
     <stub> # only modify this section
     plt.title('{goal.question}', wrap=True)
-    return plt;
+    return plt
 
 chart = plot(data) # data already contains the data to be plotted. Always include this line. No additional code beyond this line."""
 
@@ -69,10 +70,12 @@ chart = plot(data) # data already contains the data to be plotted. Always includ
                 f"""
 import plotnine as p9
 <imports>
+# solution plan
+# i.  ..
 def plot(data: pd.DataFrame):
     chart = <stub>
 
-    return chart;
+    return chart
 
 chart = plot(data) # data already contains the data to be plotted. Always include this line. No additional code beyond this line.. """
 
@@ -85,6 +88,9 @@ chart = plot(data) # data already contains the data to be plotted. Always includ
                 """
 import altair as alt
 <imports>
+# solution plan
+# i.  ..
+
 def plot(data: pd.DataFrame):
     <stub> # only modify this section
     return chart
@@ -100,8 +106,11 @@ chart = plot(data) # data already contains the data to be plotted.  Always inclu
                 """
 import plotly.express as px
 <imports>
+# solution plan
+# i.  ..
+
 def plot(data: pd.DataFrame):
-    fig = <stub> # only modify this section
+    chart = <stub> # only modify this section
 
     return chart
 chart = plot(data) # variable data already contains the data to be plotted and should not be loaded again.  Always include this line. No additional code beyond this line..
@@ -109,7 +118,7 @@ chart = plot(data) # variable data already contains the data to be plotted and s
 
         else:
             raise ValueError(
-                "Unsupported library. Choose from 'matplotlib', 'seaborn', 'plotly', 'bokeh', 'ggplot', 'altair'."
+                "Unsupported library. Choose from 'matplotlib', 'seaborn', 'plotly', 'ggplot', 'altair'."
             )
 
         return template, instructions
