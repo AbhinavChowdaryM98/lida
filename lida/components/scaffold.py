@@ -81,7 +81,7 @@ chart = plot(data) # data already contains the data to be plotted. Always includ
 
         elif library == "altair":
             instructions = {
-                "role": "system",
+                "role": "assistant",
                 "content": f"{general_instructions}. Always add a type that is BASED on semantic_type to each field such as :Q, :O, :N, :T, :G. Use :T if semantic_type is year or date. The plot method must return an altair object (chart)`. Think step by step. \n",
             }
             template = \
@@ -99,7 +99,7 @@ chart = plot(data) # data already contains the data to be plotted.  Always inclu
 
         elif library == "plotly":
             instructions = {
-                "role": "system",
+                "role": "assistant",
                 "content": f"{general_instructions} If calculating metrics such as mean, median, mode, etc. ALWAYS use the option 'numeric_only=True' when applicable and available, AVOID visualizations that require nbformat library. DO NOT inlcude fig.show(). The plot method must return an plotly figure object (fig)`. Think step by step. \n.",
             }
             template = \
